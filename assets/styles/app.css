@@ -1,0 +1,146 @@
+/* public/css/login.css */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    outline: 2px #45a049;
+    padding: 3vh;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1vh;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.form-group input:focus {
+    border-color: #5fbae9;
+    box-shadow: 0 0 8px rgba(95, 186, 233, 0.5);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin: 1vh;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+
+.footer{display: flex;
+flex-direction: row;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardPicture {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #777;
+    margin: 10px 0;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #4CAF50; /* Green */
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    color: #388E3C; /* Darker green */
+}

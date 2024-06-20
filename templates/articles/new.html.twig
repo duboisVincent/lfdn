@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Créer un Article</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.title) }} {# Assurez-vous que les autres champs sont également inclus #}
+        {{ form_row(form.content) }} {# Incluez le champ 'content' ici #}
+        {{ form_row(form.headerImage) }} {# Assurez-vous que les autres champs sont également inclus #}
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    {{ form_end(form) }}
+{% endblock %}

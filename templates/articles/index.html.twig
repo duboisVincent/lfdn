@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticlesController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<h1>Tout les articles ✅</h1>
+    <div class="card-container">
+        {% for article in articles %}
+            <div class="card">
+                <img class="cardPicture" src="{{ article.headerImage }}" alt="{{ article.title }}">
+                <div class="card-content">
+                    <h2 class="card-title">{{ article.title }}</h2>
+                    <p> Lectures: {{article.views}}</p>
+                    <a href="{{ path('app_read_article', { 'id': article.id }) }}" class="card-link">Read more</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
